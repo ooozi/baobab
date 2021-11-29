@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: checkout repository
+    - name: Checkout repository
       uses: actions/checkout@v2
       with:
         path: ./github-cicd-action
@@ -26,4 +26,6 @@ jobs:
         distribution: 'adopt'
         cache: maven
     - name: Build with Maven
-      run: mvn clean install
+      run: |
+        cd ./github-cicd-action
+        mvn clean install
