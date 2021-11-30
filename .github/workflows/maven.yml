@@ -34,6 +34,6 @@ jobs:
         image: baobab/springboot-images-new
         tags: latest
         registry: docker.io
-        dockerfile: Dockerfile
+        dockerfile: ./github-cicd-action/Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
