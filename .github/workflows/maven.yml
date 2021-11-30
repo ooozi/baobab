@@ -31,7 +31,7 @@ jobs:
     - name: Build & push Docker image
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
-        image: baobab/github-cicd-action/springboot-images-new
+        image: baobab/github-cicd-action/target/springboot-images-new
         tags: latest
         registry: docker.io
         dockerfile: ./github-cicd-action/Dockerfile
