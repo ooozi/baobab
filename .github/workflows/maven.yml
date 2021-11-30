@@ -26,6 +26,6 @@ jobs:
     - name: Build with Maven
       run: |
         pwd
-        ll
+        ls -a
         cd ../github-cicd-action
         mvn clean install
