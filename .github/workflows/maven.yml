@@ -27,5 +27,5 @@ jobs:
       run: |
         pwd
         ls -a
-        cd ../github-cicd-action
+        cd ./github-cicd-action
         mvn clean install
