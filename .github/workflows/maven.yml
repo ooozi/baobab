@@ -17,8 +17,6 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
-      with:
-        GITHUB_WORKSPACE: /home/baobab/src
     - name: Set up JDK 1.8
       uses: actions/setup-java@v1
       with:
@@ -26,4 +24,8 @@ jobs:
         distribution: 'adopt'
         cache: maven
     - name: Build with Maven
-      run: mvn clean install
+      run: |
+        pwd
+        ll
+        cd ../github-cicd-action
+        mvn clean install
